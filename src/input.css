@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Stylizacja pola wyszukiwania */
+.search-input {
+	transform: translateX(0);
+	opacity: 1;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animacja wyjścia pola wyszukiwania */
+.search-input.hidden {
+	transform: translateX(100%);
+	opacity: 0;
+}
