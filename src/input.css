@@ -1,16 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Add this to your existing CSS or in a new stylesheet */
 
-/* Stylizacja pola wyszukiwania */
-.search-input {
-	transform: translateX(0);
-	opacity: 1;
-	transition: transform 0.3s ease, opacity 0.3s ease;
+.animate-slide-in {
+	animation: slideIn 1s ease forwards;
 }
 
-/* Animacja wyjścia pola wyszukiwania */
-.search-input.hidden {
-	transform: translateX(100%);
-	opacity: 0;
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

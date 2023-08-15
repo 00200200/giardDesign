@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	//MENU SEARCH BAR
 	const searchIcon = document.querySelector('#search-button');
-	const searchInput = document.getElementById('search-bar-container');
+	const searchForm = document.querySelector('#search-container');
 
 	const offerButton = document.querySelector('#mega-menu-full-dropdown-button');
 	const offerMenu = document.querySelector('#mega-menu-full-dropdown');
@@ -17,10 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// SEARCH BAR TOGGLE LISTENER
 	searchIcon.addEventListener('click', function () {
-		searchInput.classList.toggle('hidden');
+		searchForm.classList.toggle('hidden');
+		searchForm.classList.toggle('animate-slide-in');
 	});
 
 	offerButton.addEventListener('click', () => {
 		offerMenu.classList.toggle('hidden');
+		offerMenu.classList.toggle('animate-slide-in');
 	});
 });
