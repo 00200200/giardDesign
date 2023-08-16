@@ -25,4 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		offerMenu.classList.toggle('hidden');
 		offerMenu.classList.toggle('animate-slide-in');
 	});
+
+	//simple slider
+	const images = ['../assets/Photo.png', '../assets/Photo2.png', '../assets/Photo3.png'];
+	let currentImageIndex = 0;
+
+	const prevButton = document.getElementById('prevButton');
+	const nextButton = document.getElementById('nextButton');
+	const imageElement = document.querySelector('.object-cover'); // Zmieniony selektor
+
+	prevButton.addEventListener('click', () => {
+		currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+		imageElement.src = images[currentImageIndex];
+	});
+
+	nextButton.addEventListener('click', () => {
+		currentImageIndex = (currentImageIndex + 1) % images.length;
+		imageElement.src = images[currentImageIndex];
+	});
 });
