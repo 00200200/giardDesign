@@ -10,10 +10,9 @@
 <body>
     <header>
         <!-- navbar -->
-        <nav class="bg-white
-        ">
-            <div class="flex flex-wrap justify-between items-center mx-auto p-4 w-11/12">
-                <a href=" #" class="flex items-center pl-4">
+        <nav class="bg-white font-montserrat container mx-auto ">
+            <div class="flex flex-wrap justify-between items-center py-4 mx-auto  w-[87%]">
+                <a href=" #" class="flex items-center ">
                     <img src="/assets/giarddesign.svg" alt="Logo giarddesign">
                 </a>
                 <button data-collapse-toggle="mega-menu-full" type="button"
@@ -146,115 +145,196 @@
     <!-- INTRO  -->
     <!-- INTRO -->
     <!-- Intro -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 w-auto h-[96vh]">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  h-[96vh] container mx-auto font-montserrat">
+        <!-- Sekcja po lewej stronie -->
+        <div class="col-span-1 bg-beige flex flex-col justify-center items-center lg:h-[96vh] " ">
+            <div class=" lg:w-[3/4] md:w-3/4 lg:text-left sm:text-center">
+            <h2
+                class="text-black text-5xl text-center mb-5 lg:text-left md:text-left lg:text-6xl md:text-5xl font-medium leading-tight lg:mb-11 md:mb-7 ">
+                Nowoczesna aranżacja <br> Twojego ogrodu
+            </h2>
+            <p
+                class="text-base text-center lg:text-left md:text-left font-normal lg:mb-16  w-[72%] text-black font-inter lg:text-16 leading-[150%]  md:mb-7">
+                Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy
+                zakres usług z indywidualnym podejściem do każdego projektu.
+            </p>
+            <div class="flex flex-col lg:flex-row m-auto lg:m-0  lg:justify-between mt-6  w-4/5 ">
+                <button
+                    class="bg-customGreen text-white text-base font-normal sm:px-4 py-3 px-6 rounded-full mb-4 lg:mb-0 lg:mr-4">
+                    Skontaktuj się z nami
+                </button>
+                <button
+                    class="bg-none text-customGreen text-base font-normal py-3 px-6 rounded-full flex items-center border border-customGreen gap-2">
+                    Zobacz nasze realizacje
+                    <img src="../assets/down_arrow.svg" alt="Strzałka w dół">
+                </button>
+            </div>
+        </div>
+    </div>
 
-
-        <div class="col-span-1 bg-beige flex flex-col justify-center items-center lg:h-[96vh]">
-            <div class=" lg:w-3/4 sm:w-full md:w-3/4 lg:text-left sm:text-center ">
-                <h2
-                    class="text-black text-5xl text-center mb-5 lg:text-left md:text-left lg:text-7xl  md:text-5xl font-semibold leading-tight lg:mb-11 md:mb-7 ">
-                    Nowoczesna aranżacja <br>Twojego ogrodu
-                </h2>
-                <p
-                    class="text-base text-center lg:text-left md:text-left font-normal lg:mb-16 lg:w-[60%] sm:w-[80%] md:w-[100%] text-black font-inter lg:text-16 leading-[150%] md:mb-7 ">
-                    Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy
-                    zakres usług z indywidualnym podejściem do każdego projektu.
-                </p>
-                <div
-                    class="flex flex-col lg:flex-row m-auto w-[61%] md:w-full lg:m-0 lg:w-3/4 lg:justify-between mt-6  ">
-                    <button
-                        class="bg-customGreen text-white  text-base font-normal sm:px-4 py-3 px-6 rounded-full mb-4 lg:mb-0 lg:mr-4">
-                        Skontaktuj się z nami
+    <!-- Sekcja po prawej stronie -->
+    <div class="hidden sm:block col-span-1 sticky bottom-0 right-0  flex-col justify-end items-end h-[96vh] lg:h-auto">
+        <div class="relative w-full h-full">
+            <img src="../assets/Photo.png" alt="random photo"
+                class="lg:absolute inset-0 w-full h-full object-cover md:relative">
+            <div class="absolute inset-0 flex items-end justify-end">
+                <div class="bg-grey">
+                    <button class="bg-grey text-gray-800 py-8 px-12 mr-4" id="prevButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <button
-                        class="bg-none text-customGreen    text-base font-normal py-3 px-6 rounded-full flex items-center border border-customGreen gap-2">
-                        Zobacz nasze realizacje
-                        <img src="../assets/down_arrow.svg" alt="Strzałka w dół">
+                    <button class="bg-grey text-gray-800 py-10 px-12 " id="nextButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
                     </button>
                 </div>
             </div>
-
-
         </div>
-        <!-- Mobile: Ukrycie sekcji ze zdjęciem -->
-        <div
-            class="hidden sm:block col-span-1 sticky bottom-0 right-0 bg-gray-200  flex-col justify-end items-end h-[96vh] lg:h-auto">
-            <div class="relative w-full h-full">
-                <img src="../assets/Photo.png" alt="random photo"
-                    class="lg:absolute inset-0 w-full h-full object-cover md:relative">
-                <div class="absolute inset-0 flex items-end justify-end ">
-                    <div class="bg-grey">
-                        <button class="bg-grey text-gray-800 py-8 px-12 mr-4" id="prevButton">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 19l-7-7 7-7"></path>
-                            </svg>
-                        </button>
-                        <button class="bg-grey text-gray-800 py-10 px-12 " id="nextButton">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                                </path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </div>
 
 
     <!-- oferty -->
     <!-- Offers -->
     <!-- OFFERS -->
-    <section id='offers' class="w-full bg-gray-100">
-        <div class="flex w-3/4 mx-auto py-16 flex-col items-start">
-            <p class="offer-header text-green-600 font-medium">Oferta</p>
-            <h1 class="text-5xl font-medium mb-8">Działamy Kompleksowo</h1>
-            <p class="offer-text text-black font-normal text-base lg:w-2/3">
+
+    <section id='offers' class="container lg:h-screen bg-grey mx-auto font-montserrat sm:h-auto md:h-screen">
+        <div class="flex w-full sm:w-3/4 mx-auto py-16 flex-col items-start ">
+            <p class="text-customGreen lg:text-xs lg:font-medium mb-4 lg:mx-0 md:text-3xl md:mx-auto ">Oferta</p>
+            <h1 class="text-5xl   lg:mx-0 font-medium mb-8 md:mx-auto">Działamy Kompleksowo</h1>
+            <p
+                class="text-black lg:mx-0 lg:w-[59%] lg:text-left font-normal lg:text-base sm:text-lg md:w-[89%] md:mx-auto md:text-center md:text-2xl">
                 Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe
-                oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
+                oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na
+                każdym
                 etapie posłużymy radą i wieloletnim doświadczeniem.
             </p>
         </div>
-        <div class="flex justify-between  mt-12 mx-auto  w-[88%]">
-            <div class="bg-white p-6 rounded-lg shadow-md  w-96">
-                <img src="../assets/pen_icon.png" alt="Icon 1" class="w-12 h-12 mb-4">
-                <h3 class="text-black font-medium text-lg">Projekty</h3>
+
+
+        <div
+            class="flex flex-wrap justify-center mt-12 lg:mx-auto  sm:w-[87%] md:w-full gap-6 offers-cards-container lg:m-0 lg:p-0 lg:flex-auto lg:justify-between lg:w-[87%]">
+            <div
+                class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] md:w-96 px-10 py-12 transform transition-transform hover:scale-105">
+                <div class="mb-8 h-10">
+                    <img src="../assets/pen_icon.png" alt="Icon 1">
+                </div>
+                <h3 class="text-black font-medium text-[28px] mb-3">Projekty</h3>
                 <p class="text-black font-normal text-sm">
-                    Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
-                    przestrzeni.
+                    Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
                 </p>
-                <a href="#" class="learn-more flex mt-12 items-center text-green-600">
+                <a href="#" id="card1"
+                    class="learn-more flex mt-12 items-center text-customGreen border-b-customGreen border-b lg:w-[52%] md:w-full">
                     Dowiedz się więcej
                     <img src="../assets/Arrow.svg" alt="Strzałka w prawo" class="inline-block w-4 h-4 ml-1">
                 </a>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md w-96">
-                <img src="../assets/eye_icon.png" alt="Icon 2" class="w-12 h-12 mb-4">
-                <h3 class="text-black font-medium text-lg">Wizualizacje</h3>
+
+            <div
+                class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] md:w-96 px-10 py-12 transform transition-transform hover:scale-105 mt-6 md:mt-0">
+                <div class="mb-8 h-10">
+                    <img src="../assets/eye_icon.png" alt="Icon 1">
+                </div>
+                <h3 class="text-black font-medium text-[28px] mb-3">Wizualizacje</h3>
                 <p class="text-black font-normal text-sm">
                     Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.
                 </p>
-                <a href="#" class="learn-more flex mt-12 items-center text-green-600">
+                <a href="#" id="card2"
+                    class="learn-more flex mt-12 items-center text-customGreen border-b-customGreen border-b lg:w-[52%] md:w-full">
                     Dowiedz się więcej
                     <img src="../assets/Arrow.svg" alt="Strzałka w prawo" class="inline-block w-4 h-4 ml-1">
                 </a>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-md w-96">
-                <img src="../assets/stars_icon.png" alt="Icon 3" class="w-12 h-12 mb-4">
-                <h3 class="text-black font-medium text-lg">Realizacje</h3>
+
+            <div
+                class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] md:w-96 px-10 py-12 transform transition-transform hover:scale-105 mt-6 md:mt-0">
+                <div class="mb-8 h-10">
+                    <img src="../assets/stars_icon.png" alt="Icon 1">
+                </div>
+                <h3 class="text-black font-medium text-[28px] mb-3">Realizacje</h3>
                 <p class="text-black font-normal text-sm">
                     Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.
                 </p>
-                <a href="#" class="learn-more flex mt-12 items-center text-green-600">
+                <a href="#" id="card3"
+                    class="learn-more flex mt-12 items-center text-customGreen border-b-customGreen border-b lg:w-[52%] md:w-full">
                     Dowiedz się więcej
                     <img src="../assets/Arrow.svg" alt="Strzałka w prawo" class="inline-block w-4 h-4 ml-1">
                 </a>
             </div>
         </div>
+
+
+
+        <!-- //POPUPS -->
+
+
+        <div id="popup1"
+            class="fixed inset-0 hidden justify-center items-center bg-black bg-opacity-50 container mx-auto">
+            <div class="bg-white p-8 rounded-lg shadow-md w-80vw h-80vh z-50">
+
+                <h1
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
+                    Projekty</h1>
+                <p class="text-black">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere, quaerat illum voluptate
+                    a vel molestias reiciendis eius error possimus exercitationem dolorem magnam tempora officiis
+                    quidem laudantium enim voluptates consectetur fuga corrupti. Reprehenderit quo error iste ullam
+                    tempora facilis sit quaerat tenetur velit enim, recusandae illo sunt itaque ex nostrum?
+                </p>
+                <button id="closePopup1"
+                    class="mt-4 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-md">Zamknij</button>
+            </div>
+        </div>
+
+
+        <div id="popup2"
+            class="fixed inset-0 hidden justify-center items-center bg-black bg-opacity-50 container mx-auto">
+            <div class="bg-white p-8 rounded-lg shadow-md w-80vw h-80vh z-50">
+
+                <h1
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
+                    Wizualizacje</h1>
+                <p class="text-black">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere, quaerat illum voluptate
+                    a vel molestias reiciendis eius error possimus exercitationem dolorem magnam tempora officiis
+                    quidem laudantium enim voluptates consectetur fuga corrupti. Reprehenderit quo error iste ullam
+                    tempora facilis sit quaerat tenetur velit enim, recusandae illo sunt itaque ex nostrum?
+                </p>
+                <button id="closePopup2"
+                    class="mt-4 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-md">Zamknij</button>
+            </div>
+        </div>
+
+
+        <div id="popup3"
+            class="fixed inset-0 hidden justify-center items-center bg-black bg-opacity-50 container mx-auto">
+            <div class="bg-white p-8 rounded-lg shadow-md w-80vw h-80vh z-50">
+                <h1
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
+                    Realizacje</h1>
+                <p class="text-black">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere, quaerat illum voluptate
+                    a vel molestias reiciendis eius error possimus exercitationem dolorem magnam tempora officiis
+                    quidem laudantium enim voluptates consectetur fuga corrupti. Reprehenderit quo error iste ullam
+                    tempora facilis sit quaerat tenetur velit enim, recusandae illo sunt itaque ex nostrum?
+                </p>
+                <button id="closePopup3"
+                    class="mt-4 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-md">Zamknij</button>
+            </div>
+        </div>
+
+
     </section>
+
+
+    <section class="h-screen bg-black"></section>
+
 
 
     <script src="main.js"></script>

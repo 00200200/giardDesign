@@ -43,4 +43,24 @@ document.addEventListener('DOMContentLoaded', () => {
 		currentImageIndex = (currentImageIndex + 1) % images.length;
 		imageElement.src = images[currentImageIndex];
 	});
+
+	function togglePopup(openButtonSelector, closeButtonSelector, popupSelector) {
+		const openButton = document.querySelector(openButtonSelector);
+		const closeButton = document.querySelector(closeButtonSelector);
+		const popup = document.querySelector(popupSelector);
+
+		openButton.addEventListener('click', e => {
+			e.preventDefault();
+			popup.classList.remove('hidden');
+			popup.classList.add('flex');
+		});
+
+		closeButton.addEventListener('click', () => {
+			popup.classList.add('hidden');
+			popup.classList.remove('flex');
+		});
+	}
+	togglePopup('#card1', '#closePopup1', '#popup1');
+	togglePopup('#card2', '#closePopup2', '#popup2');
+	togglePopup('#card3', '#closePopup3', '#popup3');
 });
