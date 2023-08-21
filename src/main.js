@@ -63,4 +63,33 @@ document.addEventListener('DOMContentLoaded', () => {
 	togglePopup('#card1', '#closePopup1', '#popup1');
 	togglePopup('#card2', '#closePopup2', '#popup2');
 	togglePopup('#card3', '#closePopup3', '#popup3');
+
+	const masonry = new Macy({
+		container: '.damn',
+		mobileFirst: true,
+		columns: 3,
+		breakAt: {
+			800: {
+				margin: {
+					x: 10,
+					y: 10,
+				},
+				columns: 2,
+			},
+			1299: {
+				margin: {
+					x: 40,
+					y: 40,
+				},
+				columns: 3,
+			},
+			1000: {
+				margin: {
+					x: 20,
+					y: 20,
+				},
+				columns: 2,
+			},
+		},
+	});
 });

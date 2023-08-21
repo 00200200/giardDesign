@@ -23,3 +23,7 @@
 		flex-flow: inherit;
 	}
 }
+
+img {
+	float: left;
+}
