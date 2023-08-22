@@ -117,11 +117,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	function toggleImages() {
 		const shadowContainer = document.querySelector('#shadow-container');
 		const hiddenImages = document.querySelectorAll('.hidden-image');
-
+		const imageContainer = document.querySelector('#image-container');
 		if (imagesExpanded) {
 			expandButton.textContent = expandButton.textContent.replace('Zwiń', 'Rozwiń');
-			hiddenImages.forEach(image => image.classList.add('hidden'));
+			hiddenImages.forEach(image => {
+				image.classList.add('md:hidden');
+				image.classList.add('lg:hidden');
+			});
 			shadowContainer.classList.add('bg-gradient-to-t');
+			imageContainer.classList.remove('z-50');
 			const masonry = new Macy({
 				container: '.damn',
 				mobileFirst: true,
@@ -155,7 +159,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		} else {
 			expandButton.textContent = expandButton.textContent.replace('Rozwiń', 'Zwiń');
 			shadowContainer.classList.remove('bg-gradient-to-t');
-			hiddenImages.forEach(image => image.classList.remove('hidden'));
+
+			hiddenImages.forEach(image => {
+				image.classList.remove('md:hidden');
+				image.classList.remove('lg:hidden');
+			});
+			imageContainer.classList.add('z-50');
 			const masonry = new Macy({
 				container: '.damn',
 				mobileFirst: true,
