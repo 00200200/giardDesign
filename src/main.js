@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	const masonry = new Macy({
 		container: '.damn',
 		mobileFirst: true,
+		// waitForImages: true,
+
 		columns: 3,
 		breakAt: {
 			800: {
@@ -92,4 +94,99 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		},
 	});
+
+	const modal = document.getElementById('imageModal');
+	const modalImage = document.getElementById('modalImage');
+
+	function openModal(src) {
+		modalImage.src = src;
+		modal.classList.remove('hidden');
+	}
+
+	function closeModal() {
+		modal.classList.add('hidden');
+	}
+
+	modal.addEventListener('click', closeModal);
+	modalImage.addEventListener('click', e => e.stopPropagation());
+
+	let imagesExpanded = false;
+	const expandButton = document.querySelector('#expandButton');
+
+	expandButton.addEventListener('click', toggleImages);
+	function toggleImages() {
+		const shadowContainer = document.querySelector('#shadow-container');
+		const hiddenImages = document.querySelectorAll('.hidden-image');
+
+		if (imagesExpanded) {
+			expandButton.textContent = expandButton.textContent.replace('Zwiń', 'Rozwiń');
+			hiddenImages.forEach(image => image.classList.add('hidden'));
+			shadowContainer.classList.add('bg-gradient-to-t');
+			const masonry = new Macy({
+				container: '.damn',
+				mobileFirst: true,
+				// waitForImages: true,
+
+				columns: 3,
+				breakAt: {
+					800: {
+						margin: {
+							x: 10,
+							y: 10,
+						},
+						columns: 2,
+					},
+					1299: {
+						margin: {
+							x: 40,
+							y: 40,
+						},
+						columns: 3,
+					},
+					1000: {
+						margin: {
+							x: 20,
+							y: 20,
+						},
+						columns: 2,
+					},
+				},
+			});
+		} else {
+			expandButton.textContent = expandButton.textContent.replace('Rozwiń', 'Zwiń');
+			shadowContainer.classList.remove('bg-gradient-to-t');
+			hiddenImages.forEach(image => image.classList.remove('hidden'));
+			const masonry = new Macy({
+				container: '.damn',
+				mobileFirst: true,
+				// waitForImages: true,
+
+				columns: 3,
+				breakAt: {
+					800: {
+						margin: {
+							x: 10,
+							y: 10,
+						},
+						columns: 2,
+					},
+					1299: {
+						margin: {
+							x: 40,
+							y: 40,
+						},
+						columns: 3,
+					},
+					1000: {
+						margin: {
+							x: 20,
+							y: 20,
+						},
+						columns: 2,
+					},
+				},
+			});
+		}
+		imagesExpanded = !imagesExpanded;
+	}
 });

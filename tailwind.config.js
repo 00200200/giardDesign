@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				'montserrat': ['Montserrat', 'sans-serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
+				inter: ['Inter', 'sans-serif'],
 			},
 			colors: {
 				beige: '#DCC1AB',
@@ -16,4 +17,3 @@ module.exports = {
 	},
 	plugins: [],
 };
-
