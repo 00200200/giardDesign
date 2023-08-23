@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
@@ -12,11 +13,11 @@
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
+<body class="w-screen overflow-x-hidden">
+    <header data-aos="fade-left" class="w-full">
         <!-- navbar -->
-        <nav class="bg-white font-montserrat container mx-auto py-1  w-screen ">
-            <div class="flex flex-wrap justify-between items-center py-4 mx-auto  w-[87%]">
+        <nav class="bg-white font-montserrat container mx-auto py-1  ">
+            <div class="flex flex-wrap justify-between items-center py-4   ">
                 <a href=" #" class="flex items-center ">
                     <img src="/assets/giarddesign.svg" alt="Logo giarddesign">
                 </a>
@@ -71,7 +72,7 @@
                 </div>
             </div>
 
-            <div id="search-container" class="flex justify-end lg:mx-auto   hidden lg:w-[87%] ">
+            <div id="search-container" class="flex justify-end lg:mx-auto   hidden  ">
                 <form class="mt-4 justify-center w-96">
                     <label for="default-search" class="mb-2 text-sm font-medium text-black sr-only">Search</label>
                     <div class="relative">
@@ -141,40 +142,43 @@
         </nav>
     </header>
 
-
-
-    <!-- INTRO  -->
-    <!-- INTRO -->
-    <!-- Intro -->
     <section id="intro"
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:h-[94vh] lg:container md:h-[95vh] md:w-screen lg:w-[80%] sm:w-screen mx-auto font-montserrat">
-        <div class="col-span-1 bg-beige flex flex-col justify-center items-center lg:h-[94vh] p-10 md:p-0 lg:p-0 ">
-            <div class="md:w-3/4 lg:text-left sm:text-center lg:w-[3/4]">
-                <h2
-                    class="md:text-center text-black text-5xl text-center mb-5 lg:text-left lg:text-6xl md:text-5xl font-medium leading-tight lg:mb-11 md:mb-10 ">
-                    Nowoczesna aranżacja <br> Twojego ogrodu
-                </h2>
-                <p
-                    class="text-base text-center lg:text-left md:text-center font-normal lg:mb-16  lg:w-[76%] text-black font-inter lg:text-16 leading-[150%]  md:mb-10 ">
-                    Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy
-                    zakres usług z indywidualnym podejściem do każdego projektu.
-                </p>
-                <div class="flex flex-col lg:flex-row m-auto lg:m-0  lg:justify-between mt-6  lg:w-[87%] md:mt-10   ">
-                    <button
-                        class="bg-customGreen text-white text-base font-normal sm:px-4 py-3 px-6 rounded-full mb-4 lg:mb-0 md:mb-10 lg:mr-4">
-                        Skontaktuj się z nami
-                    </button>
-                    <button
-                        class="bg-none text-customGreen text-base font-normal py-3 px-6 rounded-full flex items-center border border-customGreen gap-2 justify-around text-center">
-                        Zobacz nasze realizacje
-                        <img src="../assets/down_arrow.svg" alt="Strzałka w dół">
-                    </button>
+        class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  bg-beige font-montserrat lg:h-[80vh] md:h-[80vh]  w-full sm:w-screen md:w-screen sm:h-full">
+        <div class="col-span-1 flex flex-col justify-center items-center  p-10 md:p-0 lg:p-0" data-aos="fade-right">
+            <div class="lg:w-screen md:px-5 mx-auto">
+                <div class="container mx-auto">
+                    <div class=" lg:w-[46%] lg:text-left">
+                        <h2
+                            class="text-center lg:text-left
+                     text-black text-5xl md:text-5xl lg:text-6xl font-medium leading-tight mb-5 lg:w-[80%] lg:mb-11 md:mb-10">
+                            Nowoczesna aranżacja <br> Twojego ogrodu
+                        </h2>
+                        <p
+                            class="text-base text-center lg:text-left md:text-center font-normal lg:mb-16 lg:w-[62%] text-black font-inter lg:text-16 leading-[150%] md:mb-10">
+                            Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy
+                            kompleksowy
+                            zakres usług z indywidualnym podejściem do każdego projektu.
+                        </p>
+                        <div class="flex flex-col lg:flex-row m-auto lg:m-0 lg:justify-between mt-6 lg:w-3/4 md:mt-10">
+                            <button
+                                class="bg-customGreen text-white text-base font-normal sm:px-4 py-3 px-6 rounded-full mb-4 lg:mb-0 md:mb-10 lg:mr-4">
+                                Skontaktuj się z nami
+                            </button>
+                            <button
+                                class="bg-none text-customGreen text-base font-normal py-3 px-6 rounded-full flex items-center border border-customGreen gap-2 justify-around text-center">
+                                Zobacz nasze realizacje
+                                <img src="../assets/down_arrow.svg" alt="Strzałka w dół">
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+
         <!-- Sekcja po prawej stronie -->
-        <div class="hidden sm:block col-span-1 sticky bottom-0 right-0  flex-col justify-end items-end lg:h-auto">
+        <div class="hidden sm:block col-span-1 sticky bottom-0 right-0 flex-col justify-end items-end "
+            data-aos="fade-right">
             <div class="relative w-full h-full">
                 <img src="../assets/Photo.png" alt="random photo"
                     class="lg:absolute inset-0 w-full h-full object-cover md:relative">
@@ -184,8 +188,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 19l-7-7 7-7">
-                                </path>
+                                    d="M15 19l-7-7 7-7"></path>
                             </svg>
                         </button>
                         <button class="bg-grey text-gray-800 py-10 px-12 " id="nextButton">
@@ -202,193 +205,213 @@
     </section>
 
 
+
     <!-- oferty -->
     <!-- Offers -->
     <!-- OFFERS -->
 
-    <section id="offers"
-        class="lg:container lg:h-screen bg-grey mx-auto font-montserrat sm:h-auto md:h-screen w-full p-0 sm:text-center">
-        <div class="flex justify-center w-full sm:w-3/4 mx-auto py-16 flex-col items-start">
-            <p
-                class="text-customGreen lg:text-xs lg:font-medium mb-4 lg:mx-0 md:text-3xl md:mx-auto lg:text-left  text-center w-full">
-                Oferta</p>
-            <h1 class="text-5xl md:text-center lg:text-left text-center lg:mx-0 font-medium mb-8 md:mx-auto">Działamy
-                Kompleksowo
-            </h1>
-            <p
-                class="text-black lg:mx-0 lg:w-[59%] lg:text-left font-normal lg:text-base sm:text-lg md:w-[89%] md:mx-auto  text-center md:text-center md:text-2xl">
-                Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz
-                rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie
-                posłużymy radą i wieloletnim doświadczeniem.
-            </p>
-        </div>
+    <section id="offers" class=" bg-grey font-montserrat w-full p-0 pb-[10%] sm:text-center overflow-hidden"
+        data-aos="fade-up">
+        <div class="container mx-auto">
+            <div class="flex mx-auto justify-center w-full sm:w-3/4 py-0 lg:py-16 flex-col items-start ">
+                <p
+                    class="text-customGreen lg:text-xs lg:font-medium mb-4 lg:mx-0 md:text-3xl md:mx-auto lg:text-left  text-center w-full">
+                    Oferta</p>
+                <h1 class="text-5xl md:text-center lg:text-left text-center lg:mx-0 font-medium mb-8 md:mx-auto">
+                    Działamy
+                    Kompleksowo
+                </h1>
+                <p
+                    class="text-black lg:mx-0 lg:w-[59%] lg:text-left font-normal lg:text-base sm:text-lg md:w-[89%] md:mx-auto  text-center md:text-center md:text-2xl">
+                    Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe
+                    oraz
+                    rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
+                    etapie
+                    posłużymy radą i wieloletnim doświadczeniem.
+                </p>
+            </div>
 
-        <div
-            class="flex flex-wrap justify-center mt-12 lg:mx-auto sm:w-[87%] md:w-full gap-6 offers-cards-container lg:m-0 lg:p-0 lg:flex-auto lg:justify-between lg:w-[88%]">
             <div
-                class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] md:w-96 lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105">
-                <div class="mb-8 h-10">
-                    <img src="../assets/pen_icon.png" alt="Pen icon">
+                class="flex  justify-center mt-12 lg:mx-auto  md:w-full gap-6 offers-cards-container p-7 md:p-0 lg:m-0 lg:p-0 lg:flex-auto  lg:justify-between flex-nowrap  flex-col lg:flex-row md:flex-row text-center lg:text-left md:text-left">
+
+
+                <div class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] lg:w-[28%] lg lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105 "
+                    data-aos="fade-right">
+                    <div class="mb-8 h-10 ">
+                        <img src="../assets/pen_icon.png" alt="Pen icon">
+                    </div>
+                    <h3 class="text-black font-medium text-lg md:text-2xl lg:text-[28px] mb-3">Projekty</h3>
+                    <p class="text-black font-normal lg:text-sm md:text-base">
+                        Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
+                        przestrzeni.
+                    </p>
+                    <a href="#" id="card1"
+                        class="mx-auto lg:mx-0 md:mx-0 learn-more flex mt-12 items-center text-customGreen text-center lg:text-left md:text-left border-b-customGreen border-b w-[70%] md:w-11/12 lg:text-base md:text-[16px] lg:w-[58%]">
+                        Dowiedz się więcej
+                        <img src="../assets/Arrow.svg" alt="Strzałka w prawo" class="inline-block w-4 h-4 ml-1">
+                    </a>
                 </div>
-                <h3 class="text-black font-medium text-lg md:text-2xl lg:text-[28px] mb-3">Projekty</h3>
-                <p class="text-black font-normal lg:text-sm md:text-base">
-                    Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
-                </p>
-                <a href="#" id="card1"
-                    class="learn-more flex mt-12 items-center text-customGreen border-b-customGreen border-b w-[52%] md:w-[80%] lg:text-base md:text-[16px] lg:w-[58%]">
-                    Dowiedz się więcej
-                    <img src="../assets/Arrow.svg" alt="Strzałka w prawo" class="inline-block w-4 h-4 ml-1">
-                </a>
-            </div>
 
-            <div
-                class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] md:w-96 lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105 mt-6 md:mt-0">
-                <div class="mb-8 h-10">
-                    <img src="../assets/eye_icon.png" alt="Eye Icon">
+                <div class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] lg:w-[28%] lg lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105 mt-6 md:mt-0"
+                    data-aos="fade-up">
+                    <div class="mb-8 h-10">
+                        <img src="../assets/eye_icon.png" alt="Eye Icon">
+                    </div>
+                    <h3 class="text-black font-medium text-lg md:text-2xl lg:text-[28px] mb-3">Wizualizacje</h3>
+                    <p class="text-black font-normal lg:text-sm md:text-base">
+                        Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.
+                    </p>
+                    <a href="#" id="card2"
+                        class=" mx-auto lg:mx-0 md:mx-0 learn-more flex lg:text-base md:text-[16px] mt-12 items-center text-customGreen w-[70%] border-b-customGreen border-b  md:w-11/12 lg:w-[58%]">
+                        Dowiedz się więcej
+                        <img src="../assets/Arrow.svg" alt="Strzałka w prawo" class="inline-block w-4 h-4 ml-1">
+                        <hr />
+                    </a>
                 </div>
-                <h3 class="text-black font-medium text-lg md:text-2xl lg:text-[28px] mb-3">Wizualizacje</h3>
-                <p class="text-black font-normal lg:text-sm md:text-base">
-                    Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.
-                </p>
-                <a href="#" id="card2"
-                    class="learn-more flex lg:text-base md:text-[16px] mt-12 items-center text-customGreen border-b-customGreen border-b w-[52%] md:w-[80%] lg:w-[58%]">
-                    Dowiedz się więcej
-                    <img src="../assets/Arrow.svg" alt="Strzałka w prawo" class="inline-block w-4 h-4 ml-1">
-                    <hr />
-                </a>
-            </div>
 
-            <div
-                class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] md:w-96 lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105 mt-6 md:mt-0 mb-9 md:mb-0">
-                <div class="mb-8 h-10">
-                    <img src="../assets/stars_icon.png" alt="Stars Icon">
+                <div class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] lg:w-[28%] lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105 mt-6 md:mt-0 mb-9 md:mb-0"
+                    data-aos="fade-left">
+                    <div class="mb-8 h-10">
+                        <img src="../assets/stars_icon.png" alt="Stars Icon">
+                    </div>
+                    <h3 class="text-black font-medium text-lg md:text-2xl lg:text-[28px] mb-3 ">Realizacje</h3>
+                    <p class="text-black font-normal lg:text-sm md:text-base">
+                        Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.
+                    </p>
+                    <a href="#" id="card3"
+                        class="mx-auto lg:mx-0 md:mx-0 learn-more flex mt-12 items-center border-b-customGreen border-b w-[80%] text-customGreen  lg:w-[70%] md:w-full lg:text-base md:text-[16px]">
+                        Zobacz nasze realizacje
+                        <img src="../assets/Arrow.svg" alt="Strzałka w prawo" class="inline-block w-4 h-4 ml-1">
+                    </a>
                 </div>
-                <h3 class="text-black font-medium text-lg md:text-2xl lg:text-[28px] mb-3">Realizacje</h3>
-                <p class="text-black font-normal lg:text-sm md:text-base">
-                    Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.
-                </p>
-                <a href="#" id="card3"
-                    class="learn-more flex mt-12 items-center border-b-customGreen border-b text-customGreen  lg:w-[70%] md:w-full lg:text-base md:text-[16px]">
-                    Zobacz nasze realizacje
-                    <img src="../assets/Arrow.svg" alt="Strzałka w prawo" class="inline-block w-4 h-4 ml-1">
-                </a>
             </div>
-        </div>
 
 
 
-        <!-- //POPUPS -->
+            <!-- //POPUPS -->
 
 
-        <div id="popup1" class="fixed inset-0 hidden flex justify-center items-center bg-black bg-opacity-50 z-50">
-            <div
-                class="bg-white p-8 rounded-lg shadow-md md:max-w-80vw md:max-h-80vh h-[60vh] lg:w-[80vw] overflow-auto">
+            <div id="popup1" class="fixed inset-0 hidden flex justify-center items-center bg-black bg-opacity-50 z-50">
+                <div
+                    class="bg-white p-8 rounded-lg shadow-md md:max-w-80vw md:max-h-80vh h-[60vh] lg:w-[80vw] overflow-auto">
 
-                <h1
-                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
-                    Projekty</h1>
-                <p class="text-black">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere, quaerat illum voluptate
-                    a vel molestias reiciendis eius error possimus exercitationem dolorem magnam tempora officiis
-                    quidem laudantium enim voluptates consectetur fuga corrupti. Reprehenderit quo error iste ullam
-                    tempora facilis sit quaerat tenetur velit enim, recusandae illo sunt itaque ex nostrum?
-                </p>
-                <button id="closePopup1"
-                    class="mt-4 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-md">Zamknij</button>
+                    <h1
+                        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
+                        Projekty</h1>
+                    <p class="text-black">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere, quaerat illum voluptate
+                        a vel molestias reiciendis eius error possimus exercitationem dolorem magnam tempora officiis
+                        quidem laudantium enim voluptates consectetur fuga corrupti. Reprehenderit quo error iste ullam
+                        tempora facilis sit quaerat tenetur velit enim, recusandae illo sunt itaque ex nostrum?
+                    </p>
+                    <button id="closePopup1"
+                        class="mt-4 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-md">Zamknij</button>
+                </div>
             </div>
-        </div>
 
 
-        <div id="popup2" class="fixed inset-0 hidden flex justify-center items-center bg-black bg-opacity-50 z-50">
-            <div
-                class="bg-white p-8 rounded-lg shadow-md md:max-w-80vw md:max-h-80vh overflow-auto h-[60vh] lg:w-[80vw]">
+            <div id="popup2" class="fixed inset-0 hidden flex justify-center items-center bg-black bg-opacity-50 z-50">
+                <div
+                    class="bg-white p-8 rounded-lg shadow-md md:max-w-80vw md:max-h-80vh overflow-auto h-[60vh] lg:w-[80vw]">
 
-                <h1
-                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
-                    Wizualizacje</h1>
-                <p class="text-black">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere, quaerat illum voluptate
-                    a vel molestias reiciendis eius error possimus exercitationem dolorem magnam tempora officiis
-                    quidem laudantium enim voluptates consectetur fuga corrupti. Reprehenderit quo error iste ullam
-                    tempora facilis sit quaerat tenetur velit enim, recusandae illo sunt itaque ex nostrum?
-                </p>
-                <button id="closePopup2"
-                    class="mt-4 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-md">Zamknij</button>
+                    <h1
+                        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
+                        Wizualizacje</h1>
+                    <p class="text-black">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere, quaerat illum voluptate
+                        a vel molestias reiciendis eius error possimus exercitationem dolorem magnam tempora officiis
+                        quidem laudantium enim voluptates consectetur fuga corrupti. Reprehenderit quo error iste ullam
+                        tempora facilis sit quaerat tenetur velit enim, recusandae illo sunt itaque ex nostrum?
+                    </p>
+                    <button id="closePopup2"
+                        class="mt-4 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-md">Zamknij</button>
+                </div>
             </div>
-        </div>
 
 
-        <div id="popup3" class="fixed inset-0 hidden flex justify-center items-center bg-black bg-opacity-50 z-50">
-            <div
-                class="bg-white p-8 rounded-lg shadow-md md:max-w-80vw md:max-h-80vh overflow-auto h-[60vh] lg:w-[80vw]">
-                <h1
-                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
-                    Realizacje</h1>
-                <p class="text-black">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere, quaerat illum voluptate
-                    a vel molestias reiciendis eius error possimus exercitationem dolorem magnam tempora officiis
-                    quidem laudantium enim voluptates consectetur fuga corrupti. Reprehenderit quo error iste ullam
-                    tempora facilis sit quaerat tenetur velit enim, recusandae illo sunt itaque ex nostrum?
-                </p>
-                <button id="closePopup3"
-                    class="mt-4 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-md">Zamknij</button>
+            <div id="popup3" class="fixed inset-0 hidden flex justify-center items-center bg-black bg-opacity-50 z-50">
+                <div
+                    class="bg-white p-8 rounded-lg shadow-md md:max-w-80vw md:max-h-80vh overflow-auto h-[60vh] lg:w-[80vw]">
+                    <h1
+                        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
+                        Realizacje</h1>
+                    <p class="text-black">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere, quaerat illum voluptate
+                        a vel molestias reiciendis eius error possimus exercitationem dolorem magnam tempora officiis
+                        quidem laudantium enim voluptates consectetur fuga corrupti. Reprehenderit quo error iste ullam
+                        tempora facilis sit quaerat tenetur velit enim, recusandae illo sunt itaque ex nostrum?
+                    </p>
+                    <button id="closePopup3"
+                        class="mt-4 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-md">Zamknij</button>
+                </div>
             </div>
+
         </div>
-
-
     </section>
 
 
-
-
-    <!-- About -->
-    <section class="lg:h-[75vh] bg-black container lg:mx-auto md:mx-0 font-montserrat lg:w-[87vw] md:w-screen ">
-        <div
-            class="grid grid-cols-1 md:grid-cols-2 h-full lg:gap-16 md:gap-0 bg-customGreen md:w-screen lg:w-[100%] pb-8 md:pb-0">
-            <div class="hidden md:block relative bg-gray-200 w-full lg:h-[75vh]">
-                <img src="../assets/about_garden_photo.png" alt="Image"
-                    class="absolute inset-0 w-full h-full object-cover">
-                <div class="absolute inset-0 flex items-end justify-end">
-                    <div class="bg-grey"></div>
+    <!-- //about -->
+    <section data-aos="fade-up" id="about"
+        class=" w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  bg-customGreen font-montserrat md:h-[80vh] h-full lg:h-[80vh]">
+        <div data-aos="fade-right"
+            class="order-last  col-span-1 flex flex-col justify-center items-center  p-10 md:p-0 lg:p-0">
+            <div class=" lg:w-screen md:px-5 mx-auto">
+                <div class="container mx-auto">
+                    <div class=" lg:w-[50%] lg:text-left flex flex-col gap-16">
+                        <div>
+                            <p
+                                class="text-grey w-full text-center lg:text-xs lg:font-medium mb-4 lg:mx-0 md:text-3xl md:mx-auto lg:text-left">
+                                O firmie</p>
+                            <h1
+                                class="text-5xl text-grey text-center  lg:mx-0 font-medium mb-10 md:mx-auto lg:w-[30%] lg:text-left md:text-center w-full">
+                                Tworzymy z pasją</h1>
+                            <p
+                                class="text-grey lg:mx-0 md:w-[100%] lg:w-[70%] lg:text-left font-normal lg:text-base sm:text-lg  md:mx-auto md:text-center md:text-2xl text-center">
+                                Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani
+                                projektanci
+                                oraz
+                                architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta.
+                                Nasza
+                                specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria
+                                i
+                                elegancka
+                                prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
+                            </p>
+                        </div>
+                        <div class="flex flex-col lg:flex-row m-auto lg:m-0 lg:justify-between mt-6 lg:w-3/4 md:mt-10">
+                            <button
+                                class="bg-none text-grey text-base font-normal py-3 px-6 rounded-full flex items-center justify-start border border-grey gap-2 ">
+                                Poznaj nas bliżej
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+                                        fill="#F5F0EC" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div
-                class="relative md:sticky md:bottom-0 bg-customGreen flex flex-col justify-center items-center md:h-screen md:py-20 lg:h-[75vh] lg:ml-16 md:ml-0">
-                <div class="flex w-full sm:w-3/4 lg:mx-auto md:w-full md:mx-0 py-16 flex-col items-start">
-                    <p
-                        class="text-grey w-full text-center lg:text-xs lg:font-medium mb-4 lg:mx-0 md:text-3xl md:mx-auto lg:text-left">
-                        O firmie</p>
-                    <h1
-                        class="text-5xl text-grey text-center  lg:mx-0 font-medium mb-10 md:mx-auto lg:w-[30%] lg:text-left md:text-center w-full">
-                        Tworzymy z pasją</h1>
-                    <p
-                        class="text-grey lg:mx-0 md:w-[100%] lg:w-[70%] lg:text-left font-normal lg:text-base sm:text-lg  md:mx-auto md:text-center md:text-2xl text-center">
-                        Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz
-                        architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
-                        specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka
-                        prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
-                    </p>
-                </div>
-                <div class="flex justify-start mx-0 lg:w-3/4 ">
-                    <button
-                        class="bg-none text-grey text-base font-normal py-3 px-6 rounded-full flex items-center justify-start border border-grey gap-2 ">
-                        Poznaj nas bliżej
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path
-                                d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
-                                fill="#F5F0EC" />
-                        </svg>
-                    </button>
-                </div>
+        </div>
+
+
+        <!-- Sekcja po prawej stronie -->
+        <div data-aos="fade-left"
+            class="hidden sm:block col-span-1 sticky bottom-0 right-0 flex-col justify-end items-end ">
+            <div class="relative w-full h-full">
+                <img src="../assets/Photo.png" alt="random photo"
+                    class="lg:absolute inset-0 w-full h-full object-cover md:relative">
             </div>
         </div>
     </section>
 
 
     <section id="realizations"
-        class="lg:container h-full bg-beige  lg:mx-auto relative font-montserrat lg:w-[80%] md:w-screen md:mx-0 ">
+        class=" w-full h-full bg-beige  lg:mx-auto relative font-montserrat  md:w-screen md:mx-0 " data-aos="fade-up">
         <div class="h-[30vh] container md:w-screen">
-            <div class="lg:w-[80%] md:w-screen flex justify-center align-middle flex-col lg:mx-auto md:mx-0 h-full">
+            <div data-aos="fade-right"
+                class="lg:w-[50%] md:w-screen flex justify-center align-middle flex-col lg:mx-auto md:mx-0 h-full">
                 <p
                     class="text-customGreen lg:text-xs lg:font-medium mb-4 lg:mx-0 md:text-3xl md:mx-auto mt-6 lg:text-left text-center">
                     Realizacje
@@ -401,24 +424,24 @@
         </div>
         <div class="container mx-auto ">
             <div id='image-container' class="damn h-[80vh] relative ">
-                <img onclick="openModal(this.src)" class="cursor-pointer" src="http://picsum.photos/451/601"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer" src="http://picsum.photos/452/338"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/451/452"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer" src="http://picsum.photos/451/530"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/452/603"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/451/452"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/451/603"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/451/452"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/451/452"
-                    alt="random_photo">
+                <img data-aos='fade-right'="openModal(this.src)" class="cursor-pointer"
+                    src="http://picsum.photos/451/601" alt="random_photo">
+                <img data-aos='fade-up' onclick="openModal(this.src)" class="cursor-pointer"
+                    src="http://picsum.photos/452/338" alt="random_photo">
+                <img data-aos='fade-left'="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/451/452" alt="random_photo">
+                <img data-aos='fade-right' onclick="openModal(this.src)" class="cursor-pointer"
+                    src="http://picsum.photos/451/530" alt="random_photo">
+                <img data-aos='fade-up' onclick="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/452/603" alt="random_photo">
+                <img data-aos='fade-left' onclick="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/451/452" alt="random_photo">
+                <img data-aos='fade-right' onclick="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/451/603" alt="random_photo">
+                <img data-aos='fade-up' onclick="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/451/452" alt="random_photo">
+                <img data-aos='fade-left' onclick="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/451/452" alt="random_photo">
                 <img onclick="openModal(this.src)" class="cursor-pointer lg:hidden block md:hidden  hidden-image"
                     src="http://picsum.photos/451/452" alt="random_photo">
                 <img onclick="openModal(this.src)" class="cursor-pointer lg:hidden block md:hidden  hidden-image"
@@ -431,7 +454,7 @@
                     src="http://picsum.photos/552/630" alt="random_photo">
             </div>
         </div>
-        <div id='shadow-container'
+        <div data-aos="fade-left" id='shadow-container'
             class="hidden lg:block md:block g:bg-gradient-to-t md:bg-gradient-to-t from-beige absolute bottom-0 left-0 w-full  lg:h-screen md:h-screen">
             <div class="  w-full flex justify-center items-end h-screen">
                 <div class="flex flex-col w-full justify-center relative">
@@ -463,20 +486,21 @@
 
 
 
-    <section id="contact"
-        class="lg:container lg:h-[50vh] md:h-full lg:mx-auto  flex items-center justify-center font-montserrat">
-        <div
-            class="lg:w-3/4 sm:w-full md:w-screen h-full lg:mx-auto lg:h-[40vh] md:h-[40vh] bg-customGreen flex lg:gap-16">
-            <div class="justify-center items-center w-full">
+    <section data-aos="fade-up" id="contact"
+        class=" lg:container  w-full lg:h-[50vh] md:h-full md:w-screen md:mx-0 lg:mx-auto  flex items-center justify-center font-montserrat ">
+        <div data-aos="fade-up"
+            class="lg:w-3/4 sm:w-full md:w-screen h-full lg:mx-auto lg:h-[40vh] md:h-[40vh] bg-customGreen  flex lg:gap-16">
+            <div data-aos="fade-up" class="justify-center items-center w-full">
                 <div class="flex flex-col md:flex-row lg:flex-row justify-center items-center h-full gap-16">
                     <h2
-                        class="text-grey text-[40px] font-normal text-center lg:text-left md:text-leftw-full md:w-[60%] lg:w-[60%]">
+                        class="pt-8 text-grey text-[40px] font-normal text-center lg:text-left md:text-leftw-full md:w-[60%] lg:w-[60%]">
                         Zostańmy w kontakcie! <br>Znajdziesz nas na
                         <span class="font-inter font-semibold italic text-[40px] ml-1">
                             Instagramie.
                         </span>
                     </h2>
-                    <div class="flex flex-col gap-6 justify-between lg:w-[15%] md:w-[15%] w-1/2 mb-11  md:mb-0 lg:mb-0">
+                    <div data-aos="fade-up"
+                        class="flex flex-col gap-6 justify-between lg:w-[15%] md:w-[15%] w-1/2 mb-11  md:mb-0 lg:mb-0">
                         <h3 class="text-grey text-base lg:text-left md:text-left text-center">Śledź nasze <br>najnowsze
                             realizacje!</h3>
                         <button
@@ -491,51 +515,55 @@
 
 
 
+    <footer class="bg-black w-full mx-auto pt-9 font-inter" data-aos="fade-up">
+        <div class="container mx-auto">
+            <div class="mx-auto md:w-3/4 lg:w-3/4 py-6 lg:py-8" data-aos="fade-up">
+                <div class="justify-center md:flex md:justify-between pt-9 md:flex-col lg:flex-row" data-aos="fade-up">
+                    <div class="my-auto md:mb-4 " data-aos="fade-up">
+                        <a href="#" class="flex items-center" data-aos="fade-up">
+                            <img src="../assets/giardDesign_footer_logo.svg" alt="giarddesign logo" />
+                        </a>
+                    </div>
+                    <div class="gap-6 flex flex-col md:flex-row lg:flex-row md:justify-between md:gap-0"
+                        data-aos="fade-up">
+                        <h4 class="text-grey text-base font-normal py-2 md:py-0 md:my-auto" data-aos="fade-up">
+                            Daj znać, co możemy dla Ciebie zrobić!
+                        </h4>
+                        <button class="bg-customGreen text-grey text-base font-normal md:ml-6 py-3 px-6 rounded-full"
+                            data-aos="fade-up">
+                            Skontaktuj się z nami
+                        </button>
+                    </div>
+                </div>
+                <hr class="my-[62px] border-grey sm:mx-auto" data-aos="fade-up" />
 
-    <footer class="bg-black lg:container md:w-screen mx-auto pt-9 font-inter">
-        <div class="mx-auto md:w-3/4 lg:w-3/4 py-6 lg:py-8">
-            <div class="md:flex md:justify-between pt-9 md:flex-col lg:flex-row">
-                <div class="my-auto md:mb-4">
-                    <a href="#" class="flex items-center">
-                        <img src="../assets/giardDesign_footer_logo.svg" alt="giarddesign logo" />
-                    </a>
+                <div class="sm:flex sm:items-center sm:justify-between md:flex-col lg:flex-row text-sm text-grey font-inter mb-10 lg:mb-[120px]"
+                    data-aos="fade-up">
+                    <div class="flex gap-6 justify-around lg:justify-start md:justify-start" data-aos="fade-up">
+                        <a href="">Kontakt</a>
+                        <a href="">Instagram</a>
+                        <a href="">Facebook</a>
+                        <a href="">Linkedin</a>
+                    </div>
+                    <div class="flex gap-6 mt-4 sm:mt-0 justify-around lg:justify-start md:justify-start"
+                        data-aos="fade-up">
+                        <a href="">000-000-000</a>
+                        <a href="">giarddesign@kontakt.pl</a>
+                    </div>
                 </div>
-                <div class="gap-6 flex md:justify-between md:gap-0">
-                    <h4 class="text-grey text-base font-normal py-2 md:py-0 md:my-auto">
-                        Daj znać, co możemy dla Ciebie zrobić!
-                    </h4>
-                    <button class="bg-customGreen text-grey text-base font-normal md:ml-6 py-3 px-6 rounded-full">
-                        Skontaktuj się z nami
-                    </button>
-                </div>
-            </div>
-            <hr class="my-[62px] border-grey sm:mx-auto" />
 
-            <div
-                class="sm:flex sm:items-center sm:justify-between md:flex-col lg:flex-row text-sm text-grey font-inter mb-10 lg:mb-[120px]">
-                <div class="flex gap-6 justify-around lg:justify-start md:justify-start">
-                    <a href="">Kontakt</a>
-                    <a href="">Instagram</a>
-                    <a href="">Facebook</a>
-                    <a href="">Linkedin</a>
-                </div>
-                <div class="flex gap-6 mt-4 sm:mt-0 justify-around lg:justify-start md:justify-start">
-                    <a href="">000-000-000</a>
-                    <a href="">giarddesign@kontakt.pl</a>
-                </div>
-            </div>
-
-            <div class="flex sm:justify-between flex-col lg:flex-row md:flex-row">
-                <span class="text-base text-grey text-center lg:text-left  mb-0 md:mb-4 lg:mb-4 ">Prawa zastrzeżone ©
-                    2022</span>
-                <div class="flex items-center justify-center">
-                    <span class="text-base text-grey sm:text-center  mb-0 mr-4 sm:mb-0">made by</span>
-                    <img src="../assets/logo-full-light.svg" alt="made by" />
+                <div class="flex sm:justify-between flex-col lg:flex-row md:flex-row" data-aos="fade-up">
+                    <span class="text-base text-grey text-center lg:text-left  mb-0 md:mb-4 lg:mb-4 ">Prawa zastrzeżone
+                        ©
+                        2022</span>
+                    <div class="flex items-center justify-center" data-aos="fade-up">
+                        <span class="text-base text-grey sm:text-center  mb-0 mr-4 sm:mb-0">made by</span>
+                        <img src="../assets/logo-full-light.svg" alt="made by" />
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-
 
 
     <script>
@@ -545,8 +573,18 @@
             modalImage.src = src;
             modal.classList.remove('hidden');
         }
+        AOS.init();
     </script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            startEvent: "DOMContentLoaded",
+            duration: 1000,
+            once: true,
+            offset: 200,
+        });
+    </script>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
 

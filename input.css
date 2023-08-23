@@ -18,7 +18,7 @@
 }
 
 /* No inherit option in tailwindcss, so we have to use media query to override the flex-flow property */
-.offers-cards-container {
+/* .offers-cards-container {
 	@media (min-width: 768px) {
 		flex-flow: inherit;
 	}
@@ -26,4 +26,4 @@
 
 img {
 	float: left;
-}
+} */
