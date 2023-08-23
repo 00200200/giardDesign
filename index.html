@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
@@ -13,7 +14,7 @@
 </head>
 
 <body class="w-screen overflow-x-hidden">
-    <header class="w-full">
+    <header data-aos="fade-left" class="w-full">
         <!-- navbar -->
         <nav class="bg-white font-montserrat container mx-auto py-1  ">
             <div class="flex flex-wrap justify-between items-center py-4   ">
@@ -142,8 +143,8 @@
     </header>
 
     <section id="intro"
-        class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  bg-beige font-montserrat h-[80vh] w-full sm:w-screen md:w-screen">
-        <div class="col-span-1 flex flex-col justify-center items-center  p-10 md:p-0 lg:p-0">
+        class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  bg-beige font-montserrat lg:h-[80vh] md:h-[80vh]  w-full sm:w-screen md:w-screen sm:h-full">
+        <div class="col-span-1 flex flex-col justify-center items-center  p-10 md:p-0 lg:p-0" data-aos="fade-right">
             <div class="lg:w-screen md:px-5 mx-auto">
                 <div class="container mx-auto">
                     <div class=" lg:w-[46%] lg:text-left">
@@ -176,7 +177,8 @@
 
 
         <!-- Sekcja po prawej stronie -->
-        <div class="hidden sm:block col-span-1 sticky bottom-0 right-0 flex-col justify-end items-end ">
+        <div class="hidden sm:block col-span-1 sticky bottom-0 right-0 flex-col justify-end items-end "
+            data-aos="fade-right">
             <div class="relative w-full h-full">
                 <img src="../assets/Photo.png" alt="random photo"
                     class="lg:absolute inset-0 w-full h-full object-cover md:relative">
@@ -208,7 +210,8 @@
     <!-- Offers -->
     <!-- OFFERS -->
 
-    <section id="offers" class=" bg-grey font-montserrat w-full p-0 pb-[10%] sm:text-center overflow-hidden">
+    <section id="offers" class=" bg-grey font-montserrat w-full p-0 pb-[10%] sm:text-center overflow-hidden"
+        data-aos="fade-up">
         <div class="container mx-auto">
             <div class="flex mx-auto justify-center w-full sm:w-3/4 py-0 lg:py-16 flex-col items-start ">
                 <p
@@ -232,8 +235,8 @@
                 class="flex  justify-center mt-12 lg:mx-auto  md:w-full gap-6 offers-cards-container p-7 md:p-0 lg:m-0 lg:p-0 lg:flex-auto  lg:justify-between flex-nowrap  flex-col lg:flex-row md:flex-row text-center lg:text-left md:text-left">
 
 
-                <div
-                    class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] lg:w-[28%] lg lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105 ">
+                <div class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] lg:w-[28%] lg lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105 "
+                    data-aos="fade-right">
                     <div class="mb-8 h-10 ">
                         <img src="../assets/pen_icon.png" alt="Pen icon">
                     </div>
@@ -249,8 +252,8 @@
                     </a>
                 </div>
 
-                <div
-                    class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] lg:w-[28%] lg lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105 mt-6 md:mt-0">
+                <div class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] lg:w-[28%] lg lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105 mt-6 md:mt-0"
+                    data-aos="fade-up">
                     <div class="mb-8 h-10">
                         <img src="../assets/eye_icon.png" alt="Eye Icon">
                     </div>
@@ -266,8 +269,8 @@
                     </a>
                 </div>
 
-                <div
-                    class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] lg:w-[28%] lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105 mt-6 md:mt-0 mb-9 md:mb-0">
+                <div class="bg-white p-6 rounded-3xl shadow-md w-full sm:w-[calc(50% - 1rem)] lg:w-[28%] lg:px-10 md:px-4 py-12 transform transition-transform hover:scale-105 mt-6 md:mt-0 mb-9 md:mb-0"
+                    data-aos="fade-left">
                     <div class="mb-8 h-10">
                         <img src="../assets/stars_icon.png" alt="Stars Icon">
                     </div>
@@ -348,12 +351,13 @@
 
 
     <!-- //about -->
-    <section id="about"
-        class=" w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  bg-customGreen font-montserrat h-[80vh]">
-        <div class="order-last  col-span-1 flex flex-col justify-center items-center  p-10 md:p-0 lg:p-0">
+    <section data-aos="fade-up" id="about"
+        class=" w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  bg-customGreen font-montserrat md:h-[80vh] h-full lg:h-[80vh]">
+        <div data-aos="fade-right"
+            class="order-last  col-span-1 flex flex-col justify-center items-center  p-10 md:p-0 lg:p-0">
             <div class=" lg:w-screen md:px-5 mx-auto">
                 <div class="container mx-auto">
-                    <div class=" lg:w-[46%] lg:text-left flex flex-col gap-16">
+                    <div class=" lg:w-[50%] lg:text-left flex flex-col gap-16">
                         <div>
                             <p
                                 class="text-grey w-full text-center lg:text-xs lg:font-medium mb-4 lg:mx-0 md:text-3xl md:mx-auto lg:text-left">
@@ -393,7 +397,8 @@
 
 
         <!-- Sekcja po prawej stronie -->
-        <div class="hidden sm:block col-span-1 sticky bottom-0 right-0 flex-col justify-end items-end ">
+        <div data-aos="fade-left"
+            class="hidden sm:block col-span-1 sticky bottom-0 right-0 flex-col justify-end items-end ">
             <div class="relative w-full h-full">
                 <img src="../assets/Photo.png" alt="random photo"
                     class="lg:absolute inset-0 w-full h-full object-cover md:relative">
@@ -403,9 +408,10 @@
 
 
     <section id="realizations"
-        class=" w-full h-full bg-beige  lg:mx-auto relative font-montserrat  md:w-screen md:mx-0 ">
+        class=" w-full h-full bg-beige  lg:mx-auto relative font-montserrat  md:w-screen md:mx-0 " data-aos="fade-up">
         <div class="h-[30vh] container md:w-screen">
-            <div class="lg:w-[50%] md:w-screen flex justify-center align-middle flex-col lg:mx-auto md:mx-0 h-full">
+            <div data-aos="fade-right"
+                class="lg:w-[50%] md:w-screen flex justify-center align-middle flex-col lg:mx-auto md:mx-0 h-full">
                 <p
                     class="text-customGreen lg:text-xs lg:font-medium mb-4 lg:mx-0 md:text-3xl md:mx-auto mt-6 lg:text-left text-center">
                     Realizacje
@@ -418,24 +424,24 @@
         </div>
         <div class="container mx-auto ">
             <div id='image-container' class="damn h-[80vh] relative ">
-                <img onclick="openModal(this.src)" class="cursor-pointer" src="http://picsum.photos/451/601"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer" src="http://picsum.photos/452/338"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/451/452"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer" src="http://picsum.photos/451/530"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/452/603"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/451/452"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/451/603"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/451/452"
-                    alt="random_photo">
-                <img onclick="openModal(this.src)" class="cursor-pointer " src="http://picsum.photos/451/452"
-                    alt="random_photo">
+                <img data-aos='fade-right'="openModal(this.src)" class="cursor-pointer"
+                    src="http://picsum.photos/451/601" alt="random_photo">
+                <img data-aos='fade-up' onclick="openModal(this.src)" class="cursor-pointer"
+                    src="http://picsum.photos/452/338" alt="random_photo">
+                <img data-aos='fade-left'="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/451/452" alt="random_photo">
+                <img data-aos='fade-right' onclick="openModal(this.src)" class="cursor-pointer"
+                    src="http://picsum.photos/451/530" alt="random_photo">
+                <img data-aos='fade-up' onclick="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/452/603" alt="random_photo">
+                <img data-aos='fade-left' onclick="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/451/452" alt="random_photo">
+                <img data-aos='fade-right' onclick="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/451/603" alt="random_photo">
+                <img data-aos='fade-up' onclick="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/451/452" alt="random_photo">
+                <img data-aos='fade-left' onclick="openModal(this.src)" class="cursor-pointer "
+                    src="http://picsum.photos/451/452" alt="random_photo">
                 <img onclick="openModal(this.src)" class="cursor-pointer lg:hidden block md:hidden  hidden-image"
                     src="http://picsum.photos/451/452" alt="random_photo">
                 <img onclick="openModal(this.src)" class="cursor-pointer lg:hidden block md:hidden  hidden-image"
@@ -448,7 +454,7 @@
                     src="http://picsum.photos/552/630" alt="random_photo">
             </div>
         </div>
-        <div id='shadow-container'
+        <div data-aos="fade-left" id='shadow-container'
             class="hidden lg:block md:block g:bg-gradient-to-t md:bg-gradient-to-t from-beige absolute bottom-0 left-0 w-full  lg:h-screen md:h-screen">
             <div class="  w-full flex justify-center items-end h-screen">
                 <div class="flex flex-col w-full justify-center relative">
@@ -480,11 +486,11 @@
 
 
 
-    <section id="contact"
+    <section data-aos="fade-up" id="contact"
         class=" lg:container  w-full lg:h-[50vh] md:h-full md:w-screen md:mx-0 lg:mx-auto  flex items-center justify-center font-montserrat ">
-        <div
+        <div data-aos="fade-up"
             class="lg:w-3/4 sm:w-full md:w-screen h-full lg:mx-auto lg:h-[40vh] md:h-[40vh] bg-customGreen  flex lg:gap-16">
-            <div class="justify-center items-center w-full">
+            <div data-aos="fade-up" class="justify-center items-center w-full">
                 <div class="flex flex-col md:flex-row lg:flex-row justify-center items-center h-full gap-16">
                     <h2
                         class="pt-8 text-grey text-[40px] font-normal text-center lg:text-left md:text-leftw-full md:w-[60%] lg:w-[60%]">
@@ -493,7 +499,8 @@
                             Instagramie.
                         </span>
                     </h2>
-                    <div class="flex flex-col gap-6 justify-between lg:w-[15%] md:w-[15%] w-1/2 mb-11  md:mb-0 lg:mb-0">
+                    <div data-aos="fade-up"
+                        class="flex flex-col gap-6 justify-between lg:w-[15%] md:w-[15%] w-1/2 mb-11  md:mb-0 lg:mb-0">
                         <h3 class="text-grey text-base lg:text-left md:text-left text-center">Śledź nasze <br>najnowsze
                             realizacje!</h3>
                         <button
@@ -508,46 +515,48 @@
 
 
 
-
-    <footer class=" bg-black  w-full mx-auto pt-9 font-inter">
+    <footer class="bg-black w-full mx-auto pt-9 font-inter" data-aos="fade-up">
         <div class="container mx-auto">
-            <div class="mx-auto md:w-3/4 lg:w-3/4 py-6 lg:py-8">
-                <div class="justify-center md:flex md:justify-between pt-9 md:flex-col lg:flex-row">
-                    <div class="my-auto md:mb-4 ">
-                        <a href="#" class="flex items-center">
+            <div class="mx-auto md:w-3/4 lg:w-3/4 py-6 lg:py-8" data-aos="fade-up">
+                <div class="justify-center md:flex md:justify-between pt-9 md:flex-col lg:flex-row" data-aos="fade-up">
+                    <div class="my-auto md:mb-4 " data-aos="fade-up">
+                        <a href="#" class="flex items-center" data-aos="fade-up">
                             <img src="../assets/giardDesign_footer_logo.svg" alt="giarddesign logo" />
                         </a>
                     </div>
-                    <div class="gap-6 flex flex-col md:flex-row lg:flex-row md:justify-between md:gap-0">
-                        <h4 class="text-grey text-base font-normal py-2 md:py-0 md:my-auto">
+                    <div class="gap-6 flex flex-col md:flex-row lg:flex-row md:justify-between md:gap-0"
+                        data-aos="fade-up">
+                        <h4 class="text-grey text-base font-normal py-2 md:py-0 md:my-auto" data-aos="fade-up">
                             Daj znać, co możemy dla Ciebie zrobić!
                         </h4>
-                        <button class="bg-customGreen text-grey text-base font-normal md:ml-6 py-3 px-6 rounded-full">
+                        <button class="bg-customGreen text-grey text-base font-normal md:ml-6 py-3 px-6 rounded-full"
+                            data-aos="fade-up">
                             Skontaktuj się z nami
                         </button>
                     </div>
                 </div>
-                <hr class="my-[62px] border-grey sm:mx-auto" />
+                <hr class="my-[62px] border-grey sm:mx-auto" data-aos="fade-up" />
 
-                <div
-                    class="sm:flex sm:items-center sm:justify-between md:flex-col lg:flex-row text-sm text-grey font-inter mb-10 lg:mb-[120px]">
-                    <div class="flex gap-6 justify-around lg:justify-start md:justify-start">
+                <div class="sm:flex sm:items-center sm:justify-between md:flex-col lg:flex-row text-sm text-grey font-inter mb-10 lg:mb-[120px]"
+                    data-aos="fade-up">
+                    <div class="flex gap-6 justify-around lg:justify-start md:justify-start" data-aos="fade-up">
                         <a href="">Kontakt</a>
                         <a href="">Instagram</a>
                         <a href="">Facebook</a>
                         <a href="">Linkedin</a>
                     </div>
-                    <div class="flex gap-6 mt-4 sm:mt-0 justify-around lg:justify-start md:justify-start">
+                    <div class="flex gap-6 mt-4 sm:mt-0 justify-around lg:justify-start md:justify-start"
+                        data-aos="fade-up">
                         <a href="">000-000-000</a>
                         <a href="">giarddesign@kontakt.pl</a>
                     </div>
                 </div>
 
-                <div class="flex sm:justify-between flex-col lg:flex-row md:flex-row">
+                <div class="flex sm:justify-between flex-col lg:flex-row md:flex-row" data-aos="fade-up">
                     <span class="text-base text-grey text-center lg:text-left  mb-0 md:mb-4 lg:mb-4 ">Prawa zastrzeżone
                         ©
                         2022</span>
-                    <div class="flex items-center justify-center">
+                    <div class="flex items-center justify-center" data-aos="fade-up">
                         <span class="text-base text-grey sm:text-center  mb-0 mr-4 sm:mb-0">made by</span>
                         <img src="../assets/logo-full-light.svg" alt="made by" />
                     </div>
@@ -556,6 +565,7 @@
         </div>
     </footer>
 
+
     <script>
         function openModal(src) {
             const modal = document.getElementById('imageModal');
@@ -563,8 +573,18 @@
             modalImage.src = src;
             modal.classList.remove('hidden');
         }
+        AOS.init();
     </script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            startEvent: "DOMContentLoaded",
+            duration: 1000,
+            once: true,
+            offset: 200,
+        });
+    </script>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
 

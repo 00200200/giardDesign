@@ -198,4 +198,5 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 		imagesExpanded = !imagesExpanded;
 	}
+	
 });
